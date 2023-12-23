@@ -1,0 +1,5 @@
+<select name="product_category" required id="id_product_category" multiple>
+    {% for category in product_categories %}
+    <option value="{{ category.id }}">{{ category.name }}</option>
+    {% endfor %}
+</select>
